@@ -1,9 +1,9 @@
-#' Title
+#' Bind two factors together
 #'
-#' @param a
-#' @param b
+#' @param a factor
+#' @param b factor
 #'
-#' @return
+#' @return factor
 #' @export
 #'
 #' @examples
