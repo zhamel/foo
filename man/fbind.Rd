@@ -2,15 +2,20 @@
 % Please edit documentation in R/fbind.R
 \name{fbind}
 \alias{fbind}
-\title{Title}
+\title{Bind two factors together}
 \usage{
 fbind(a, b)
 }
 \arguments{
-\item{b}{}
+\item{a}{factor}
+
+\item{b}{factor}
+}
+\value{
+factor
 }
 \description{
-Title
+Bind two factors together
 }
 \examples{
 fbind(iris$Species[c(1,51,101)],PlantGrowth$group[c(1,11,21)])
