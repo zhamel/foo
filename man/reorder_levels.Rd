@@ -15,4 +15,7 @@ factor
 \description{
 Reorder factor levels based on frequency
 }
+\examples{
+reorder_levels(factor(c("a","a","b","c","c","c","c","d","d","d")))
+}
 

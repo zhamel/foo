@@ -3,3 +3,4 @@
 export(fbind)
 export(freq_out)
 export(reorder_levels)
+importFrom(dplyr,"%>%")
