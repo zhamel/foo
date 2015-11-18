@@ -17,5 +17,5 @@ Suggests: testthat,
 URL: https://github.com/zhamel/foo
 BugReports: https://github.com/zhamel/foo/issues
 Imports: dplyr,
-    magrittr
+    assertthat
 VignetteBuider: knitr
