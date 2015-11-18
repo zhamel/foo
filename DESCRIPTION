@@ -2,12 +2,19 @@ Package: foo
 Title: Make Factors Less Annoying
 Version: 0.0.0.9000
 Authors@R: person("Zoe", "Hamel", email = "zhamel92@gmail.com", role = c("aut", "cre"))
-Description: Factors have driven people crazy...
-Depends: 
+Description: Factors have driven people to extreme measures, like ordering
+    custom conference ribbons and laptop stickers to express how HELLNO we
+    feel about stringsAsFactors. And yet, sometimes you need them. Can they
+    be made less maddening? Let's find out.
+Depends:
     R (>= 3.2.2)
 License: MIT + file LICENSE
 LazyData: true
 RoxygenNote: 5.0.0
-Suggests: testthat
+Suggests: testthat,
+    knitr,
+    rmarkdown
 URL: https://github.com/zhamel/foo
 BugReports: https://github.com/zhamel/foo/issues
+Imports: dplyr
+VignetteBuider: knitr
