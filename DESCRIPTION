@@ -20,3 +20,4 @@ Imports: dplyr,
     assertthat,
     stats
 VignetteBuider: knitr
+VignetteBuilder: knitr
