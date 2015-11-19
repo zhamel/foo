@@ -20,8 +20,6 @@ This package consists of 4 functions which hopefully can make your life easier w
 fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
 #> [1] setosa     versicolor virginica  ctrl       trt1       trt2      
 #> Levels: ctrl setosa trt1 trt2 versicolor virginica
-#> [1] setosa     versicolor virginica  ctrl       trt1       trt2      
-#> Levels: ctrl setosa trt1 trt2 versicolor virginica
 ```
 
 ### `freq_out()`
@@ -30,13 +28,6 @@ fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
 
 ``` r
 freq_out(iris$Species)
-#> Source: local data frame [3 x 2]
-#> 
-#>            x     n
-#>       (fctr) (int)
-#> 1     setosa    50
-#> 2 versicolor    50
-#> 3  virginica    50
 #> Source: local data frame [3 x 2]
 #> 
 #>            x     n
@@ -54,8 +45,6 @@ freq_out(iris$Species)
 reorder_levels(factor(c("a","a","b","c","c","c","c","d","d","d")))
 #> [1] a b c d
 #> Levels: c d a b
-#> [1] a b c d
-#> Levels: c d a b
 ```
 
 ### `factor_to_char()`
@@ -65,5 +54,4 @@ reorder_levels(factor(c("a","a","b","c","c","c","c","d","d","d")))
 ``` r
 factor_to_char(iris$Species)
 #> [1] FALSE
-#>.[1] FALSE
 ```
