@@ -18,9 +18,11 @@ library(foo)
 
 ## Usage
 
+This package consists of 4 functions which hopefully can make your life easier when dealing with factors.
+
 ### `fbind()`
 
-**Goal**: Bind two factors together to get back a factor with the levels from both factors.
+**Goal**: Bind two factors together to get back one factor with the levels from both factors.
 
 ```{r}
 fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
@@ -30,7 +32,7 @@ fbind(iris$Species[c(1, 51, 101)], PlantGrowth$group[c(1, 11, 21)])
 
 ### `freq_out()`
 
-**Goal**: Create a data frame consisting of the levels of the factor and its frequency.
+**Goal**: Create a data frame consisting of the levels of the factor and their frequency.
 
 ```{r}
 freq_out(iris$Species)
@@ -55,11 +57,10 @@ reorder_levels(factor(c("a","a","b","c","c","c","c","d","d","d")))
 
 ### `factor_to_char()`
 
-**Goal**: Should your factor be a character instead?
-
-- If the length of the factor = # of levels of the factor, then `factor_to_char()` returns `TRUE`: maybe this shouldn't be a factor! Otherwise, if they are different, `factor_to_char()` returns `FALSE`: this time you may want to keep it as a factor!
+**Goal**: Should your factor be a character instead? This function compares the length of the factor with the number of levels. If the length of the factor = # of levels of the factor, then `factor_to_char()` returns `TRUE`: maybe this shouldn't be a factor! Otherwise, if they are different, `factor_to_char()` returns `FALSE`: this time you may want to keep it as a factor!
 
 ```{r}
 factor_to_char(iris$Species)
 #>.[1] FALSE
 ```
+

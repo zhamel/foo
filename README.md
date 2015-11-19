@@ -10,6 +10,8 @@ library(foo)
 Usage
 -----
 
+This package consists of 4 functions which hopefully can make your life easier when dealing with factors.
+
 ### `fbind()`
 
 **Goal**: Bind two factors together to get back a factor with the levels from both factors.
